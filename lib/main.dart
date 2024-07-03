@@ -26,16 +26,25 @@ class MyApp extends StatelessWidget {
             primarySwatch: Colors.lightBlue,
             scaffoldBackgroundColor: Colors.white,
             useMaterial3: true,
+
             //Theme of the app
             textTheme: TextTheme(
-                labelLarge:
-                    GoogleFonts.lato(color: Colors.white, fontSize: 19.sp),
-                labelMedium: GoogleFonts.lato(color: Colors.white),
-                labelSmall: GoogleFonts.lato(color: Colors.black),
-                bodyLarge: GoogleFonts.lato(color: Colors.black),
-                bodyMedium:
-                    GoogleFonts.lato(color: Colors.black, fontSize: 16.sp),
-                bodySmall: GoogleFonts.lato(color: Colors.black)),
+              //Label Text Theme
+              labelLarge:
+                  GoogleFonts.lato(color: Colors.white, fontSize: 19.sp),
+              labelMedium: GoogleFonts.lato(color: Colors.white),
+              labelSmall: GoogleFonts.lato(color: Colors.black),
+
+              //Body Text Theme
+              bodyLarge: GoogleFonts.lato(
+                color: const Color.fromARGB(255, 6, 56, 97),
+                fontWeight: FontWeight.bold,
+                fontSize: 25.sp,
+              ),
+              bodyMedium:
+                  GoogleFonts.lato(color: Colors.black, fontSize: 22.sp),
+              bodySmall: GoogleFonts.lato(color: Colors.black, fontSize: 16.sp),
+            ),
           ),
           debugShowCheckedModeBanner: false,
           home: const HomeScreen(),

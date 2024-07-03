@@ -9,7 +9,7 @@ class Repo {
     //API key and url (can add api key to .env for safety)
     const apiKey = 'ed828aa8d15dd39855cc3dc015c1bde9';
     var url =
-        'https://api.openweathermap.org/data/2.5/weather?q=$city&appid=$apiKey';
+        'https://api.openweathermap.org/data/2.5/weather?q=$city&appid=$apiKey&units=metric';
 
     try {
       //Making the get request

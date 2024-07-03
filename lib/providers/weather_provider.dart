@@ -14,6 +14,7 @@ class WeatherProvider extends ChangeNotifier {
   final Repo _repo = Repo();
 
   Future<void> fetchWeather(String city) async {
+    //Set loading to true when fetching weather
     _loading = true;
     _error = null;
     notifyListeners();
@@ -24,8 +25,10 @@ class WeatherProvider extends ChangeNotifier {
         _error = 'Failed to fetch weather data';
       }
     } catch (e) {
+      //Set the error if any
       _error = e.toString();
     } finally {
+      //Set loading to false after finished fetching
       _loading = false;
       notifyListeners();
     }
